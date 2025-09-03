@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactos - Parque de Autocaravanas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<!-- NAVBAR (copiar/colar igual em todas as páginas) -->
+<!-- NAVBAR (copiar/colar igual em todas as páginas) -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Parque Autocaravanas Monte Alto</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="Monte Alto.html">Monte Alto</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="background-image:  url('imagens/hero-contactos.jpg');">
+  <!-- Substitui hero-contactos.jpg pela TUA imagem de topo desta página (coloca o ficheiro em /imagens) -->
+  <div class="hero-content">
+    <h1>Contactos</h1>
+    <p>Fala connosco.</p>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Contactos</h2>
+  <div class="grid-2">
+    <div>
+      <p><strong>Telefone:</strong> +351 967 944 448</p>
+      <p><strong>Email:</strong> geral@teu-parque.pt</p>
+      <p><strong>Morada:</strong> A tua morada completa aqui</p>
+      <p><strong>Coordenadas:</strong> 37°07'42.9"N 8°24'09.7"W</p>
+    </div>
+    <div>
+      <!-- MAPA: podes integrar Google Maps ou Leaflet aqui -->
+      <div class="mapa-placeholder">Mapa (integração futura)</div>
+    </div>
+  </div>
+
+  <h3>Formulário de Contacto</h3>
+  <form id="formContacto" class="form">
+    <label>Nome</label>
+    <input type="text" id="c-nome" required />
+    <label>Email</label>
+    <input type="email" id="c-email" required />
+    <label>Mensagem</label>
+    <textarea id="c-msg" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="ok-contacto" class="ok" style="display:none;">✅ Mensagem enviada.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Parque de Autocaravanas. Todos os direitos reservados.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

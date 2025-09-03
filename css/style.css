@@ -1,0 +1,49 @@
+/* ====== Base ====== */
+body { font-family: 'Roboto', sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #222; line-height: 1.6; }
+a { color: inherit; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+/* ====== Navbar ====== */
+header { background: #2c3e50; padding: 10px 20px; position: sticky; top: 0; z-index: 10; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: #fff; font-weight: 700; font-size: 1.3rem; }
+.nav-links { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; }
+.nav-links a { color: #fff; text-decoration: none; padding-bottom: 4px; }
+.nav-links a:hover { border-bottom: 2px solid #27ae60; }
+
+/* ====== Hero ====== */
+.hero { height: 50vh; background-size: contain; background-position: center; display:flex; align-items:center; justify-content:center; text-align:center; position: relative; }
+.hero::after { content: ""; position:absolute; inset:0; background: rgba(0,0,0,0.35); }
+.hero-content { position: relative; z-index: 1; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.hero h1 { margin: 0 0 10px; font-size: 2.2rem; }
+
+/* ====== Grid util ====== */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.grid-galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.grid-galeria img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
+
+/* ====== Tabela ====== */
+.tabela { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.tabela th, .tabela td { border: 1px solid #ddd; padding: 10px; }
+.tabela th { background: #f5f5f5; text-align: left; }
+
+/* ====== Form ====== */
+.form { display:flex; flex-direction:column; gap:10px; max-width: 520px; }
+.form input, .form textarea, .form select { padding: 10px; border:1px solid #ccc; border-radius: 6px; }
+.form button { border:0; background:#27ae60; color:#fff; padding:12px 16px; border-radius:8px; cursor:pointer; }
+.form button:hover { background:#219150; }
+.ok { color: #1e7e34; }
+
+.mapa-placeholder { background:#eef2f6; border:1px dashed #aaa; border-radius:8px; height:240px; display:flex; align-items:center; justify-content:center; color:#666; }
+
+/* ====== Footer ====== */
+footer { background:#2c3e50; color:#fff; text-align:center; padding:14px; margin-top: 30px; }
+
+/* ====== Responsivo ====== */
+@media (max-width: 800px){
+  .grid-2 { grid-template-columns: 1fr; }
+  .hero { height: 40vh; }
+  .nav-links { gap: 12px; }
+}
